@@ -3,12 +3,12 @@
 import openpyxl
 import smtplib
 
-# Open the spreadsheet and get the latest dues status.
+# Open the spreadsheet and get the latest status.
 
 wb = openpyxl.load_workbook('customerStatus.xlsx')
 sheet = wb.get_sheet_by_name('Sheet1')
 
-# Check each member's pickup status status.
+# Check each member's pickup status.
 
 unnotifiedCustomers = {}
 for r in range(1, sheet.max_row + 1):
